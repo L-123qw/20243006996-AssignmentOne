@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Responsive landscape layout for the MainActivity.
+
+    This is a copy of the portrait layout with the bottom section changed:
+    instead of a 2 x 2 grid the four ImageButtons now sit next to each
+    other in a single row, as required for landscape orientation.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Top area: campus photo banner with the welcome message -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/banner_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_main_banner" />
+
+        <!-- Welcome message drawn on top of the banner photo -->
+        <TextView
+            android:id="@+id/banner_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/banner_text_padding"
+            android:text="@string/banner_text"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <!-- Bottom area: the four ImageButtons side by side in a single row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/light_green"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:padding="@dimen/grid_padding">
+
+        <!-- Facilities -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_facilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_selector"
+                android:contentDescription="@string/label_facilities"
+                android:padding="@dimen/button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_btn_facilities" />
+
+            <TextView
+                android:id="@+id/label_facilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_label_top_margin"
+                android:text="@string/label_facilities"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_label_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Events -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_selector"
+                android:contentDescription="@string/label_events"
+                android:padding="@dimen/button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_btn_events" />
+
+            <TextView
+                android:id="@+id/label_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_label_top_margin"
+                android:text="@string/label_events"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_label_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Clubs -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_clubs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_selector"
+                android:contentDescription="@string/label_clubs"
+                android:padding="@dimen/button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_btn_clubs" />
+
+            <TextView
+                android:id="@+id/label_clubs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_label_top_margin"
+                android:text="@string/label_clubs"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_label_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Support -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@drawable/btn_selector"
+                android:contentDescription="@string/label_support"
+                android:padding="@dimen/button_padding"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_btn_support" />
+
+            <TextView
+                android:id="@+id/label_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/button_label_top_margin"
+                android:text="@string/label_support"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_label_text_size"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
