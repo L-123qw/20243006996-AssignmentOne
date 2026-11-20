@@ -1,0 +1,8 @@
+<resources>
+    <!-- Spacing used by the main screen layouts (no hard-coded view sizes). -->
+    <dimen name="banner_text_padding">16dp</dimen>
+    <dimen name="grid_padding">16dp</dimen>
+    <dimen name="button_padding">12dp</dimen>
+    <dimen name="button_label_top_margin">8dp</dimen>
+    <dimen name="button_label_text_size">18sp</dimen>
+</resources>
