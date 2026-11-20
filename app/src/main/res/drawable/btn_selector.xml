@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Background selector for the four main ImageButtons.
+    The button is green while it is not being pressed and
+    turns light green while it is being pressed.
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Light green while the button is pressed -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/light_green" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+    <!-- Green while the button is not pressed -->
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/green" />
+            <corners android:radius="12dp" />
+        </shape>
+    </item>
+
+</selector>

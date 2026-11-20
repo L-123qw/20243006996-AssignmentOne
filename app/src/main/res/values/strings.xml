@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AssignmentOne</string>
+    <string name="app_name">CampusLife</string>
     <string name="hello_world">Hello World!</string>
     <string name="banner_description">Campus photo of the University of Waikato</string>
     <string name="banner_text">Welcome to\nCampusLife - Your\nPocket Guide to\nUniversity of Waikato</string>
