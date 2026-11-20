@@ -5,6 +5,8 @@
     <color name="teal_200">#03DAC5</color>
     <color name="green">#1B5E20</color>
     <color name="light_green">#66BB6A</color>
+    <color name="pink_100">#FCE4EC</color>
+    <color name="dark_grey">#212121</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
 </resources>

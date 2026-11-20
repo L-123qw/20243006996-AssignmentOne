@@ -5,4 +5,14 @@
     <dimen name="button_padding">12dp</dimen>
     <dimen name="button_label_top_margin">8dp</dimen>
     <dimen name="button_label_text_size">18sp</dimen>
+
+    <!-- Spacing and sizes used by the DetailActivity layout. -->
+    <dimen name="detail_header_padding">16dp</dimen>
+    <dimen name="detail_header_spacing">16dp</dimen>
+    <dimen name="detail_icon_size">56dp</dimen>
+    <dimen name="detail_content_padding">16dp</dimen>
+    <dimen name="detail_body_top_margin">12dp</dimen>
+    <dimen name="detail_topic_name_text_size">24sp</dimen>
+    <dimen name="detail_title_text_size">20sp</dimen>
+    <dimen name="detail_body_text_size">16sp</dimen>
 </resources>

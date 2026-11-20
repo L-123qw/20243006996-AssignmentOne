@@ -7,4 +7,7 @@
     <string name="label_events">Events</string>
     <string name="label_clubs">Clubs</string>
     <string name="label_support">Support</string>
+    <string name="topic_image_description">Image of the selected topic</string>
+    <string name="placeholder_title">This is a title</string>
+    <string name="placeholder_content">This is content</string>
 </resources>

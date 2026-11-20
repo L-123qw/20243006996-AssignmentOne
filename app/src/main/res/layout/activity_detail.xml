@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout for the DetailActivity.
+
+    The activity shows a green header with the topic image and topic
+    name, followed by the topic title and the topic content text.
+    All text views start with place-saver values that are replaced at
+    runtime with the data coming from arrays.xml.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink_100"
+    android:orientation="vertical">
+
+    <!-- Green header with the topic image and topic name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/detail_header_padding">
+
+        <ImageView
+            android:id="@+id/detail_topic_image"
+            android:layout_width="@dimen/detail_icon_size"
+            android:layout_height="@dimen/detail_icon_size"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/topic_image_description"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_btn_facilities" />
+
+        <TextView
+            android:id="@+id/detail_topic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/detail_header_spacing"
+            android:textColor="@color/white"
+            android:textSize="@dimen/detail_topic_name_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Body: the title and the content of the selected topic -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/detail_content_padding">
+
+            <!-- Place-saver title, replaced at runtime -->
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/placeholder_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/detail_title_text_size"
+                android:textStyle="bold" />
+
+            <!-- Place-saver content, replaced at runtime -->
+            <TextView
+                android:id="@+id/detail_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/detail_body_top_margin"
+                android:text="@string/placeholder_content"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/detail_body_text_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
